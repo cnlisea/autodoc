@@ -1,8 +1,8 @@
 package main
 
 import (
-	"automation"
-	"automation/config"
+	"github.com/cnlisea/automation"
+	"github.com/cnlisea/automation/config"
 	"flag"
 	"fmt"
 	"strings"
