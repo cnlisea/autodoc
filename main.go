@@ -1,26 +1,25 @@
 package main
 
 import (
-	"github.com/cnlisea/automation"
-	"github.com/cnlisea/automation/config"
 	"flag"
 	"fmt"
-	"strings"
 	"github.com/astaxie/beego/logs"
+	"github.com/cnlisea/automation"
+	"github.com/cnlisea/automation/config"
+	"strings"
 )
 
-var configFile *string = flag.String("config", "/etc/am.json", "autodoc config file")
-var logLevel *string = flag.String("log-level", "debug", "log level [debug|info|warn|error], default debug")
+var configFile *string = flag.String("f", "/etc/ad.json", "autodoc config file")
+var logLevel *string = flag.String("log-level", "debug", "log level [debug|info|warn|error]")
 var version *bool = flag.Bool("v", false, "the version of autodoc")
 var baseUrl *string = flag.String("u", "http://test.jubao56.com", "autodoc base url")
 
 //var authType *string = flag.String("a", "unauth", "auth type [unauth|bearer], default unauth")
 
-
-
 const banner string = `
 autodoc v1.0.1
 `
+
 // Automation
 var _ = ``
 
@@ -64,12 +63,11 @@ func main() {
 		return
 	}
 
-	logs.Info("instance successfully!!!")
+	logs.Info("autodoc successfully!!!")
 }
 
-
 func setLogLevel(level string) {
-	// set default level info
+	// set default level debug
 	var l int = logs.LevelDebug
 	switch strings.ToLower(level) {
 	case "debug":
