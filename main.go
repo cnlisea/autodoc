@@ -9,17 +9,17 @@ import (
 	"github.com/astaxie/beego/logs"
 )
 
-var configFile *string = flag.String("config", "/etc/am.json", "automation config file")
+var configFile *string = flag.String("config", "/etc/am.json", "autodoc config file")
 var logLevel *string = flag.String("log-level", "debug", "log level [debug|info|warn|error], default debug")
-var version *bool = flag.Bool("v", false, "the version of automation")
-var baseUrl *string = flag.String("u", "http://test.jubao56.com", "automation base url")
+var version *bool = flag.Bool("v", false, "the version of autodoc")
+var baseUrl *string = flag.String("u", "http://test.jubao56.com", "autodoc base url")
 
 //var authType *string = flag.String("a", "unauth", "auth type [unauth|bearer], default unauth")
 
 
 
 const banner string = `
-automation v1.0.1
+autodoc v1.0.1
 `
 // Automation
 var _ = ``
