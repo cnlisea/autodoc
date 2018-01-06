@@ -1,14 +1,10 @@
-hash: cfd41a6907b39becb7a560c9938b8aa30e077bde283bb485fe4fcf54cc39e31e
-updated: 2018-01-06T16:01:13.479480345+08:00
+hash: 887725f0a83a6df55a0df9c9419093855a3e20a9f067cb30df75152d8bd1b5c5
+updated: 2018-01-06T15:30:37.678292314+08:00
 imports:
 - name: github.com/astaxie/beego
   version: bf5c5626ab429e66d88602e1ab1ab5fbf4629a01
   subpackages:
   - logs
-- name: github.com/cnlisea/autodoc
-  version: 59eb3ebe32b9bc4ca168bb3a7935c04458dbc45b
-  subpackages:
-  - config
 - name: github.com/cnlisea/automation
   version: 600ba698ddb20f724fad8d83783aaadc6707a3f5
   subpackages:

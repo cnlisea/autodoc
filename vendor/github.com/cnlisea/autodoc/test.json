@@ -1,0 +1,47 @@
+{
+    "baseurl": "http://test.jubao56.com",
+    "banner_info": {
+        "request": {
+            "url":                  "/v1/cmn/biz/banner/info",
+            "auth":                 0,
+            "method":               "GET",
+            "author":               "lisea",
+            "title":                "获取banner详细信息",
+            "function":             "获取banner详细信息",
+            "explain":              ["只有后台用户可以访问该接口", "测试2"],
+            "query_id_m":            15,
+            "query_id_t":            "uint32",
+            "query_id_d":            "banner id",
+            "query_exist_n": false,
+            "query_exist_d": "是否存在"
+        },
+        "response": {
+            "json_err_code_mn": 0,
+            "json_err_code_t": "int",
+            "json_err_msg_n": "",
+            "json_err_code_d":  "错误代码，详见错误码说明",
+            "json_data_m":      "*",
+            "json_data_t":      "pricelevel",
+            "json_data_d":      "banner图片，详细说明见图片(banner)结构字段说明"
+        }
+    },
+    "user": {
+        "login": {
+            "req": {
+                "url":             "/v1/cmn/user/login",
+                "method":          "post",
+                "json_mobile_m":   "15971485531",
+                "json_password_m": "jubao56"
+            },
+            "res": {
+                "json_err_code_mn": 0,
+                "json_err_code_t":  "int",
+                "json_err_msg_n":   "",
+                "json_data_m": {
+                    "json_access_token_m": "",
+                    "json_role_id_m":      0
+                }
+            }
+        }
+    }
+}

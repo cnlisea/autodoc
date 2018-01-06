@@ -1,9 +1,11 @@
 package: autodoc
 import:
 - package: github.com/astaxie/beego
+  version: ~1.9.2
   subpackages:
   - logs
 - package: github.com/cnlisea/automation
+  version: ~1.1.1
   subpackages:
   - config
   - utils
