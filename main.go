@@ -4,7 +4,7 @@ import (
 	"flag"
 	"fmt"
 	"github.com/astaxie/beego/logs"
-	"autodoc/config"
+	"github.com/cnlisea/autodoc/config"
 	"github.com/cnlisea/automation"
 	automationConfig "github.com/cnlisea/automation/config"
 	"strings"
