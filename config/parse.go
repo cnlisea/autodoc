@@ -1,11 +1,11 @@
 package config
 
 import (
-	"strings"
-	"strconv"
 	"encoding/json"
 	cfg "github.com/cnlisea/automation/config"
 	"github.com/cnlisea/automation/utils"
+	"strconv"
+	"strings"
 )
 
 func ParseConfigFile(path string) ([]interface{}, error) {

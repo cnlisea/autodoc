@@ -4,8 +4,9 @@ import (
 	"flag"
 	"fmt"
 	"github.com/astaxie/beego/logs"
+	"github.com/cnlisea/autodoc/config"
 	"github.com/cnlisea/automation"
-	"github.com/cnlisea/automation/config"
+	automationConfig "github.com/cnlisea/automation/config"
 	"strings"
 )
 
@@ -36,7 +37,7 @@ func main() {
 	}
 
 	if len(*baseUrl) != 0 {
-		config.BaseUrl = *baseUrl
+		automationConfig.BaseUrl = *baseUrl
 	}
 
 	// logs settings
@@ -46,7 +47,7 @@ func main() {
 		setLogLevel(*logLevel)
 	}
 
-	cfg, err := automation.ParseConfigFile(*configFile)
+	cfg, err := config.ParseConfigFile(*configFile)
 	if nil != err {
 		logs.Error("parse config fail, err: ", err)
 		return
