@@ -1,12 +1,12 @@
-hash: 084d1c2849706ad00d59408d61503df9b0b93943eae095cbf09c252fdba64d0e
-updated: 2018-01-05T16:28:35.180621207+08:00
+hash: 887725f0a83a6df55a0df9c9419093855a3e20a9f067cb30df75152d8bd1b5c5
+updated: 2018-01-06T15:30:37.678292314+08:00
 imports:
 - name: github.com/astaxie/beego
   version: bf5c5626ab429e66d88602e1ab1ab5fbf4629a01
   subpackages:
   - logs
 - name: github.com/cnlisea/automation
-  version: 556ae3f993c0cabfe983b04677624fca174ee62d
+  version: 600ba698ddb20f724fad8d83783aaadc6707a3f5
   subpackages:
   - config
   - constant

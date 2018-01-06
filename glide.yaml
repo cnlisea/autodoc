@@ -5,6 +5,7 @@ import:
   subpackages:
   - logs
 - package: github.com/cnlisea/automation
-  version: ~1.0.1
+  version: ~1.1.1
   subpackages:
   - config
+  - utils
